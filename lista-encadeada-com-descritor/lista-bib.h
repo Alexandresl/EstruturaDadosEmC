@@ -7,6 +7,8 @@ typedef struct info TInfo
 // Estrutura info
 struct info {
 	int codigo;
+	char nome[10];
+	float peso;
 };
 
 // Lista métodos a serem implementados
