@@ -23,6 +23,31 @@ TDescritor* criaLista() {
   return lista;
 }
 
+TInfo* insereInfo (TInfo *info, int num) {
+	info = (TInfo*)malloc(sizeof(TInfo));
+	info->codigo = num;
+	return info;
+}
+
+void insereInicio(TDescritor *lista, TInfo *info) {
+	//ponteiro para nodo auxiliar
+	TNodo *nodo_aux;
+	
+	if (lista == NULL) {
+		printf("Lista não criada!\n");
+		return;
+	}
+	
+	// Aloca espaço para nodo
+	nodo_aux = (TNodo*)malloc(sizeof(TNodo));
+	
+	if (nodo_aux) { // Se alocou
+		// Primeiro trata a info
+		nodo_aux->info = info;
+	}
+	
+}
+
 void insereFim(TDescritor *lista, TInfo *info) {
 	// ponteiro para nodo auxiliar
 	TNodo *nodo_aux;

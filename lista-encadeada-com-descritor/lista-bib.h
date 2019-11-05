@@ -11,5 +11,9 @@ struct info {
 
 // Lista métodos a serem implementados
 TDescritor* criaLista();
+
+TInfo* insereInfo(TInfo *info, int num);
+
 void imprimeListaInicio(TDescritor *lista);
+void insereInicio(TDescritor *lista, TInfo *info);
 void insereFim(TDescritor *lista, TInfo *info);
