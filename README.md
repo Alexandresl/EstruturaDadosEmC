@@ -12,6 +12,8 @@
 
 ## Pilha
 
+### Características
+
 - Descritor apenas com topo;
 - Métodos mínimos a implementar: criarPilha(), empilhar(Descritor, info) e desempilhar(Descritor);
 - Nodo com ponteiro proximo apontando paro nodo que está embaixo na pilha;
